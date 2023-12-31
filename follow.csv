@@ -1,0 +1,11 @@
+id_follow,id_user_A,id_user_B,A_follow_B,B_follow_A
+1,2,3,False,True
+2,1,1,False,False
+3,7,4,False,False
+4,8,9,True,False
+5,9,5,False,False
+6,10,6,False,True
+7,5,10,False,True
+8,4,7,False,False
+9,6,8,False,True
+10,3,2,True,True

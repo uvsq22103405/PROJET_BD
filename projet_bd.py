@@ -36,7 +36,7 @@ noms_et_emails = [(username, generate_email_from_username(username)) for usernam
 
 # Création de la table USERS
 users = pd.DataFrame({
-    'user_id': [random.choice(range(1, 11)) for _ in range(10)],
+    'user_id': range(1, 11),
     'name_user': [nom for nom, email in noms_et_emails],
     'age': [random.randint(14, 100) for _ in range(10)],
     'email': [email for nom, email in noms_et_emails],
@@ -45,7 +45,7 @@ users = pd.DataFrame({
 })
 
 # Affichage de la table USERS
-print('La table USERS est :\n', users)
+print('La table USERS est :\n', users.to_string(index=False))
 
 
 
@@ -78,7 +78,7 @@ liste_causes = ["Trisomie 21", "SIDA", "Environnement", "Éducation", "Santé me
     "Maladies rares", "Cancer"]
 # Création de la table CONCERT
 concerts = pd.DataFrame({
-    'id_concert': [random.choice(range(1, 101)) for _ in range(10)],
+    'id_concert': range(1, 11),
     'name': [nom for nom in liste_noms_concerts],
     'lieu': [random.choice(liste_lieux_fr) for _ in range(10)],
     'organised_by': [random.choice(liste_organisateurs) for _ in range(10)],
@@ -124,7 +124,6 @@ print('La table LIEUX est :\n', lieux)
 
 '''table salle '''
 
-
 # Créer une table "salle"
 salle = pd.DataFrame({
     'id_salle': range(1, 11),
@@ -145,11 +144,63 @@ cause = pd.DataFrame({
 print('La table CAUSE est :\n', cause)
 
 
-# Enregistrer la table en fichier CSV
-#users.to_csv('users.csv', index=False, quoting=1)  # quoting=1 pour ajouter des guillemets doubles aux chaînes
-#concerts.to_csv("concerts.csv",index=False,quoting=1)
-#lieux.to_csv('lieux.csv', index=False)
-#salle.to_csv('salle.csv', index=False)
-#cause.to_csv('cause.csv', index=False)
+
+
+
+'''table FOLLOW'''
+# Créer une table Follow avec des id_user_A et id_user_B provenant de la table USERS
+follow = pd.DataFrame({
+    'id_follow':range(1, 11),
+    'id_user_A': random.sample(users['user_id'].tolist(), 10),
+    'id_user_B': random.sample(users['user_id'].tolist(), 10),
+    'A_follow_B': [random.choice([True, False]) for _ in range(10)],
+    'B_follow_A': [random.choice([True, False]) for _ in range(10)],
+})
+
+# Afficher la table Follow
+print('\nLa table FOLLOW est :\n', follow)
+
+
+'''table EVENT'''
+
+# Vérifier si la taille de la population est suffisante pour l'échantillonnage
+person_users = users[users['type'] == 'personne']
+
+if len(person_users) > 0:
+    event = pd.DataFrame({
+        'id_event': [random.choice(range(1, len(person_users) + 1)) for _ in range(len(person_users))],
+        'users_id': random.sample(person_users['user_id'].tolist(), len(person_users)),
+        'annoucement': ['participer' if random.choice([True, False]) else 'interesser' for _ in range(len(person_users))],
+        'id_concert': random.sample(concerts['id_concert'].tolist(), len(person_users)),
+    })
+    print('\nLa table EVENT est :\n', event)
+else:
+    print("La taille de la population de personnes est insuffisante pour l'échantillonnage.")
+
+
+# a finir historique faut rajouter id morceaux id playlist et avis
+'''table historique'''
+
+historique = pd.DataFrame({
+    'id_hist': range(1,11),
+    'id_user': random.sample(users['user_id'].tolist(), 10),
+    'id_concert': random.sample(concerts['id_concert'].tolist(), 10),
+})
+
+# Affichage de la table HISTORIQUE
+print('La table HISTORIQUE est :\n', historique)
+
+
+
+#Enregistrer la table en fichier CSV
+users.to_csv('users.csv', index=False, quoting=1)  # quoting=1 pour ajouter des guillemets doubles aux chaînes
+concerts.to_csv("concerts.csv",index=False,quoting=1)
+lieux.to_csv('lieux.csv', index=False)
+salle.to_csv('salle.csv', index=False)
+cause.to_csv('cause.csv', index=False)
+follow.to_csv('follow.csv', index=False)
+event.to_csv('event.csv', index=False)
+historique.to_csv('historique.csv', index=False)
+
 
 
