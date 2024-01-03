@@ -9,7 +9,7 @@ id_lieux,name_fr,name_en,name_arabic
 8,Paris,Paris,باريس
 9,Tokyo,Tokyo,طوكيو
 10,Londres,London,لندن
-11,Le Caire,Le Caire,القاهرة
+11,Le Caire,Cairo,القاهرة
 12,Istanbul,Istanbul,إسطنبول
 13,Shanghai,Shanghai,شنغهاي
 14,Mumbai,Mumbai,مومباي
@@ -54,4 +54,32 @@ id_lieux,name_fr,name_en,name_arabic
 53,Moscou,Moscow,موسكو
 54,Manille,Manila,مانيلا
 55,Seoul,Séoul,سيول
+56,Lagos,Lagos,لاجوس
+57,Johannesburg,Johannesburg,جوهانسبرغ
+58,Casablanca,Casablanca,الدار البيضاء
+59,Alexandrie,Alexandria,الإسكندرية
+60,Algiers,Algiers,الجزائر
+61,Tunis,Tunis,تونس
+62,Dakar,Dakar,دكار
+63,Cape Town,Cape Town,كيب تاون
+64,Melbourne,Melbourne,ملبورن
+65,Brisbane,Brisbane,بريزبين
+66,Perth,Perth,برث
+67,Auckland,Auckland,أوكلاند
+68,Wellington,Wellington,ويلينغتون
+69,Adélaïde,Adelaide,أديليد
+70,Honolulu,Honolulu,هونولولو
+71,Canberra,Canberra,كانبرا
+72,Suva,Suva,سوفا
+73,Toronto,Toronto,تورونتو
+74,Chicago,Chicago,شيكاغو
+75,Santiago,Santiago,سانتياغو
+76,Montreal,Montreal,مونتريال
+77,Vancouver,Vancouver,فانكوفر
+78,Miami,Miami,ميامي
+79,San Francisco,San Francisco,سان فرانسيسكو
+80,Quito,Quito,كيتو
+81,Caracas,Caracas,كاراكاس
+82,Montevideo,Montevideo,مونتيفيديو
+83,Guatemala City,Guatemala City,مدينة غواتيمالا
 
