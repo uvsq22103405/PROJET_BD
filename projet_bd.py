@@ -151,8 +151,8 @@ print('La table CAUSE est :\n', cause)
 # Créer une table Follow avec des id_user_A et id_user_B provenant de la table USERS
 follow = pd.DataFrame({
     'id_follow':range(1, 11),
-    'id_user_A': random.sample(users['user_id'].tolist(), 10),
-    'id_user_B': random.sample(users['user_id'].tolist(), 10),
+    'id_user_A': random.sample(users['id_user'].tolist(), 10),
+    'id_user_B': random.sample(users['id_user'].tolist(), 10),
     'A_follow_B': [random.choice([True, False]) for _ in range(10)],
     'B_follow_A': [random.choice([True, False]) for _ in range(10)],
 })
@@ -169,7 +169,7 @@ person_users = users[users['type'] == 'personne']
 if len(person_users) > 0:
     evennement = pd.DataFrame({
         'id_event':range(1, len(person_users) + 1),  # Utilisation de valeurs uniques
-        'users_id': random.sample(person_users['user_id'].tolist(), len(person_users)),
+        'users_id': random.sample(person_users['id_user'].tolist(), len(person_users)),
         'annoucement': ['participer' if random.choice([True, False]) else 'interesser' for _ in range(len(person_users))],
         'id_concert': random.sample(concerts['id_concert'].tolist(), len(person_users)),
     })
@@ -182,7 +182,7 @@ else:
 '''table historique'''
 historique = pd.DataFrame({
     'id_hist': range(1, 11),
-    'id_user': random.sample(users['user_id'].tolist(), 10),
+    'id_user': random.sample(users['id_user'].tolist(), 10),
     'id_concert': random.sample(concerts['id_concert'].tolist(), 10),
 })
 
