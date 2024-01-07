@@ -36,7 +36,7 @@ noms_et_emails = [(username, generate_email_from_username(username)) for usernam
 
 # Création de la table USERS
 users = pd.DataFrame({
-    'user_id': range(1, 11),
+    'id_user': range(1, 11),
     'name_user': [nom for nom, email in noms_et_emails],
     'age': [random.randint(14, 56) for _ in range(10)],
     'email': [email for nom, email in noms_et_emails],
