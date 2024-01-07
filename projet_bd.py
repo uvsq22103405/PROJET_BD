@@ -14,7 +14,7 @@ liste_de_type = ["association", "personne"]
 biographies = [
     "Passionné de technologie et de musique . Explorer le monde un clic à la fois.",
     "Amoureux de la nature et des animaux .",
-    "Artiste et rêveur ✨. Créateur de beauté à travers la peinture et la photographie.",
+    "Artiste et rêveur . Créateur de beauté à travers la peinture et la photographie.",
     "Enthousiaste de la cuisine et de la nourriture du monde .",
     "Défenseur des droits de l'homme et de l'égalité . Ensemble pour un monde meilleur.",
     "Explorateur de la science et de l'espace . Plongeons dans les étoiles ensemble!",
