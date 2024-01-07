@@ -38,9 +38,9 @@ noms_et_emails = [(username, generate_email_from_username(username)) for usernam
 users = pd.DataFrame({
     'user_id': range(1, 11),
     'name_user': [nom for nom, email in noms_et_emails],
-    'agee': [random.randint(14, 56) for _ in range(10)],
+    'age': [random.randint(14, 56) for _ in range(10)],
     'email': [email for nom, email in noms_et_emails],
-    'typee': [random.choice(liste_de_type) for _ in range(10)],
+    'type': [random.choice(liste_de_type) for _ in range(10)],
     'biographie': random.sample(biographies, k=10)
 })
 
