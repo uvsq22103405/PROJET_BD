@@ -180,9 +180,8 @@ else:
 
 # a finir historique faut rajouter id morceaux id playlist et avis
 '''table historique'''
-
 historique = pd.DataFrame({
-    'id_hist': range(1,11),
+    'id_hist': range(1, 11),
     'id_user': random.sample(users['user_id'].tolist(), 10),
     'id_concert': random.sample(concerts['id_concert'].tolist(), 10),
 })
