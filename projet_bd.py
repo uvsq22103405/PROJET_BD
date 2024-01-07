@@ -12,16 +12,16 @@ liste_de_type = ["association", "personne"]
 
 # Biographies
 biographies = [
-    "Passionné de technologie et de musique 🎸. Explorer le monde un clic à la fois.",
-    "Amoureux de la nature et des animaux 🌿🐾.",
+    "Passionné de technologie et de musique . Explorer le monde un clic à la fois.",
+    "Amoureux de la nature et des animaux .",
     "Artiste et rêveur ✨. Créateur de beauté à travers la peinture et la photographie.",
-    "Enthousiaste de la cuisine et de la nourriture du monde 🍜🌎.",
-    "Défenseur des droits de l'homme et de l'égalité ✊. Ensemble pour un monde meilleur.",
-    "Explorateur de la science et de l'espace 🚀🔭. Plongeons dans les étoiles ensemble!",
-    "Fanatique du fitness et du bien-être 💪. Transformons nos vies par la santé.",
-    "Écrivain passionné et amoureux des livres 📚✒️. Partageons nos histoires.",
-    "Voyageur du monde et amateur d'aventure 🌍⛰️. Découvrons des horizons nouveaux.",
-    "Militant environnemental 🌱🌊. Agissons pour un avenir durable."
+    "Enthousiaste de la cuisine et de la nourriture du monde .",
+    "Défenseur des droits de l'homme et de l'égalité . Ensemble pour un monde meilleur.",
+    "Explorateur de la science et de l'espace . Plongeons dans les étoiles ensemble!",
+    "Fanatique du fitness et du bien-être . Transformons nos vies par la santé.",
+    "Écrivain passionné et amoureux des livres . Partageons nos histoires.",
+    "Voyageur du monde et amateur d'aventure . Découvrons des horizons nouveaux.",
+    "Militant environnemental . Agissons pour un avenir durable."
 ]
 
 # Générer un mail
@@ -38,7 +38,7 @@ noms_et_emails = [(username, generate_email_from_username(username)) for usernam
 users = pd.DataFrame({
     'user_id': range(1, 11),
     'name_user': [nom for nom, email in noms_et_emails],
-    'age': [random.randint(14, 100) for _ in range(10)],
+    'agee': [random.randint(14, 100) for _ in range(10)],
     'email': [email for nom, email in noms_et_emails],
     'type': [random.choice(liste_de_type) for _ in range(10)],
     'biographie': random.sample(biographies, k=10)
@@ -161,19 +161,19 @@ follow = pd.DataFrame({
 print('\nLa table FOLLOW est :\n', follow)
 
 
-'''table EVENT'''
+'''table EVENNEMENT'''
 
 # Vérifier si la taille de la population est suffisante pour l'échantillonnage
 person_users = users[users['type'] == 'personne']
 
 if len(person_users) > 0:
-    event = pd.DataFrame({
+    evennement = pd.DataFrame({
         'id_event': [random.choice(range(1, len(person_users) + 1)) for _ in range(len(person_users))],
         'users_id': random.sample(person_users['user_id'].tolist(), len(person_users)),
         'annoucement': ['participer' if random.choice([True, False]) else 'interesser' for _ in range(len(person_users))],
         'id_concert': random.sample(concerts['id_concert'].tolist(), len(person_users)),
     })
-    print('\nLa table EVENT est :\n', event)
+    print('\nLa table EVENT est :\n', evennement)
 else:
     print("La taille de la population de personnes est insuffisante pour l'échantillonnage.")
 
@@ -199,7 +199,7 @@ lieux.to_csv('lieux.csv', index=False)
 salle.to_csv('salle.csv', index=False)
 cause.to_csv('cause.csv', index=False)
 follow.to_csv('follow.csv', index=False)
-event.to_csv('event.csv', index=False)
+evennement.to_csv('event.csv', index=False)
 historique.to_csv('historique.csv', index=False)
 
 
