@@ -168,7 +168,7 @@ person_users = users[users['type'] == 'personne']
 
 if len(person_users) > 0:
     evennement = pd.DataFrame({
-        'id_event': [random.choice(range(1, len(person_users) + 1)) for _ in range(len(person_users))],
+        'id_event':range(1, len(person_users) + 1),  # Utilisation de valeurs uniques
         'users_id': random.sample(person_users['user_id'].tolist(), len(person_users)),
         'annoucement': ['participer' if random.choice([True, False]) else 'interesser' for _ in range(len(person_users))],
         'id_concert': random.sample(concerts['id_concert'].tolist(), len(person_users)),
