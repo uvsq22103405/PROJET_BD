@@ -199,7 +199,7 @@ lieux.to_csv('lieux.csv', index=False)
 salle.to_csv('salle.csv', index=False)
 cause.to_csv('cause.csv', index=False)
 follow.to_csv('follow.csv', index=False)
-evennement.to_csv('event.csv', index=False)
+evennement.to_csv('evennement.csv', index=False)
 historique.to_csv('historique.csv', index=False)
 
 
