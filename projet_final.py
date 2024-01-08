@@ -310,7 +310,7 @@ print('La table album est :\n', album.to_string(index=False))
 # Création de la table PLAYLISTS
 playlist_data = []
 playlist_counter = 1  # Compteur pour les identifiants de playlist
-
+liste_name=["douche","love","sport","chill","sad"]
 # Génération de playlists aléatoires pour chaque utilisateur
 for user_id in users['user_id']:
     num_playlists = random.randint(1, 10)  # Nombre aléatoire de playlists par utilisateur
@@ -319,10 +319,12 @@ for user_id in users['user_id']:
         num_morceaux = random.randint(5, 20)  # Nombre aléatoire de morceaux par playlist (maximum de 20)
         selected_morceaux = random.sample(list(morceau['id_morceau']), k=min(num_morceaux, len(morceau)))
 
+        
+        x=random.choice(liste_name)
         playlist_data.extend([{
             'id_playlist': playlist_counter,
             'id_user': user_id,
-            'name': users.loc[users['user_id'] == user_id, 'name_user'].iloc[0],
+            'name': x ,
             'id_morceau': morceau_id,
             'id_album': morceau[morceau['id_morceau'] == morceau_id]['id_album'].values[0]
         } for morceau_id in selected_morceaux])

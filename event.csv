@@ -1,6 +1,5 @@
 id_event,users_id,annoucement,id_concert
-3,4,interesser,4
-5,2,participer,3
-3,3,interesser,6
-5,6,participer,2
-2,1,interesser,10
+3,6,interesser,1
+1,10,interesser,2
+3,9,participer,10
+4,2,interesser,6
