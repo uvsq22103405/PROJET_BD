@@ -152,13 +152,14 @@ else:
 
 
 # Enregistrer les tables en fichiers CSV
-users.to_csv('users.csv1', index=False, quoting=1)
-concerts.to_csv("concerts.csv1", index=False, quoting=1)
-historique.to_csv('historique.csv1', index=False)
+users.to_csv('users1.csv', index=False, quoting=1)
+concerts.to_csv("concerts1.csv", index=False, quoting=1)
+historique.to_csv('historique1.csv', index=False)
+cause.to_csv('cause1.csv', index=False)
+follow.to_csv('follow1.csv', index=False)
+evennement.to_csv('evennement1.csv', index=False)
 
-evennement.to_csv('evennement.csv1', index=False)
-cause.to_csv('cause.csv1', index=False)
-follow.to_csv('follow.csv1', index=False)
+
 
 
 
