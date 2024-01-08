@@ -187,28 +187,3 @@ evennement.to_csv('evennement1.csv', index=False)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
