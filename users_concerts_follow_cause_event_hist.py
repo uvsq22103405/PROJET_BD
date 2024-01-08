@@ -126,7 +126,7 @@ print('La table HISTORIQUE est :\n', historique)
 
 
 
-'''table EVENNEMENT'''
+'''table EVENNEMENT
 
 # Vérifier si la taille de la population est suffisante pour l'échantillonnage
 person_users = users[users['type'] == 'personne']
@@ -142,7 +142,7 @@ if len(person_users) > 0:
 else:
     print("La taille de la population de personnes est insuffisante pour l'échantillonnage.")
 
-
+'''
 
 
 
