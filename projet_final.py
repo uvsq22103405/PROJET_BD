@@ -321,7 +321,7 @@ for user_id in users['user_id']:
 
         playlist_data.extend([{
             'id_playlist': playlist_counter,
-            'id-user': user_id,
+            'id_user': user_id,
             'name': users.loc[users['user_id'] == user_id, 'name_user'].iloc[0],
             'id_morceau': morceau_id,
             'id_album': morceau[morceau['id_morceau'] == morceau_id]['id_album'].values[0]
@@ -342,11 +342,11 @@ print(playlist)
 page_data = []
 
 # Obtenir les ID uniques des utilisateurs
-unique_users = playlist['id-user'].unique()
+unique_users = playlist['id_user'].unique()
 
 # Génération des pages pour chaque utilisateur
 for user_id in unique_users:
-    user_playlists = playlist[playlist['id-user'] == user_id]['id_playlist'].unique()
+    user_playlists = playlist[playlist['id_user'] == user_id]['id_playlist'].unique()
 
     page_data.append({
         'id_page': user_id,  # Vous pouvez changer cela selon vos besoins
@@ -504,6 +504,7 @@ cause.to_csv('cause.csv', index=False)
 follow.to_csv('follow.csv', index=False)
 event.to_csv('event.csv', index=False)
 historique.to_csv('historique.csv', index=False)
+
 album.to_csv('album.csv', index=False)
 morceau.to_csv('morceau.csv', index=False)
 playlist.to_csv('playlist.csv', index=False)

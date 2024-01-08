@@ -1,11 +1,11 @@
 id_lieux,name_fr,name_en,name_arabic
-1,Paris,Paris,باريس
-2,Lille,Lille,ليل
-3,Marseille,Marseille,مرسيليا
-4,Nice,Nice,نيس
-5,Londres,London,لندن
+1,Orleans,Orleans,أورليانز
+2,Bordeaux,Bordeaux,بوردو
+3,Paris,Paris,باريس
+4,Londres,London,لندن
+5,New York,New York,نيويورك
 6,Tokyo,Tokyo,طوكيو
-7,Bordeaux,Bordeaux,بوردو
-8,New York,New York,نيويورك
-9,Paris,Paris,باريس
-10,Orleans,Orleans,أورليانز
+7,Marseille,Marseille,مرسيليا
+8,Paris,Paris,باريس
+9,Nice,Nice,نيس
+10,Lille,Lille,ليل
