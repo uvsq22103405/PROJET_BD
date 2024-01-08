@@ -1,31 +1,31 @@
 id_morceau,id_album,name,name_morceau,note
-0-1,0,Rumours,Don't Stop Believin',7
-0-2,0,Rumours,Like a Rolling Stone,17
-0-3,0,Rumours,Yesterday,5
-0-4,0,Rumours,Paint It Black,10
-0-5,0,Rumours,Boys Don't Cry,13
-1-1,1,Led Zeppelin IV,Don't Stop Believin',11
-1-2,1,Led Zeppelin IV,Stairway to Heaven,10
-1-3,1,Led Zeppelin IV,Kashmir,18
-1-4,1,Led Zeppelin IV,Bohemian Rhapsody,13
-1-5,1,Led Zeppelin IV,Hallelujah,15
-2-1,2,Thriller,Purple Haze,12
-2-2,2,Thriller,Don't Stop Believin',12
-2-3,2,Thriller,A Day in the Life,9
-2-4,2,Thriller,I Want to Hold Your Hand,8
-2-5,2,Thriller,Hotel California,14
-3-1,3,Abbey Road,Livin' on a Prayer,17
-3-2,3,Abbey Road,Sweet Child o' Mine,7
-3-3,3,Abbey Road,Every Breath You Take,10
-3-4,3,Abbey Road,Hallelujah,2
-3-5,3,Abbey Road,Bohemian Rhapsody,10
-4-1,4,The Dark Side of the Moon,Another Brick in the Wall,6
-4-2,4,The Dark Side of the Moon,Nothing Else Matters,7
-4-3,4,The Dark Side of the Moon,Paint It Black,3
-4-4,4,The Dark Side of the Moon,Yesterday,20
-4-5,4,The Dark Side of the Moon,Hey Jude,7
-5-1,5,Abbey Road,Bohemian Rhapsody,6
-5-2,5,Abbey Road,A Day in the Life,6
-5-3,5,Abbey Road,Let It Be,14
-5-4,5,Abbey Road,Hallelujah,7
-5-5,5,Abbey Road,Kashmir,6
+0-1,0,The Dark Side of the Moon,Bohemian Rhapsody,5
+0-2,0,The Dark Side of the Moon,November Rain,2
+0-3,0,The Dark Side of the Moon,Don't Stop Believin',1
+0-4,0,The Dark Side of the Moon,Billie Jean,7
+0-5,0,The Dark Side of the Moon,Hallelujah,15
+1-1,1,Abbey Road,Hey Jude,19
+1-2,1,Abbey Road,Bohemian Rhapsody,4
+1-3,1,Abbey Road,Every Breath You Take,7
+1-4,1,Abbey Road,Wonderwall,11
+1-5,1,Abbey Road,Billie Jean,0
+2-1,2,The Dark Side of the Moon,Boys Don't Cry,9
+2-2,2,The Dark Side of the Moon,Hey Jude,1
+2-3,2,The Dark Side of the Moon,Another Brick in the Wall,8
+2-4,2,The Dark Side of the Moon,Sweet Child o' Mine,2
+2-5,2,The Dark Side of the Moon,Billie Jean,11
+3-1,3,Abbey Road,Nothing Else Matters,19
+3-2,3,Abbey Road,Stairway to Heaven,14
+3-3,3,Abbey Road,November Rain,8
+3-4,3,Abbey Road,Hallelujah,7
+3-5,3,Abbey Road,Another Brick in the Wall,12
+4-1,4,Back in Black,Thriller,11
+4-2,4,Back in Black,Another Brick in the Wall,5
+4-3,4,Back in Black,Imagine,19
+4-4,4,Back in Black,Livin' on a Prayer,2
+4-5,4,Back in Black,Hotel California,7
+5-1,5,Thriller,I Will Always Love You,12
+5-2,5,Thriller,Every Breath You Take,6
+5-3,5,Thriller,Roxanne,13
+5-4,5,Thriller,Let It Be,3
+5-5,5,Thriller,Kashmir,7
