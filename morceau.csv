@@ -1,0 +1,31 @@
+id_morceau,id_album,name,name_morceau,note
+0-1,0,Rumours,Don't Stop Believin',7
+0-2,0,Rumours,Like a Rolling Stone,17
+0-3,0,Rumours,Yesterday,5
+0-4,0,Rumours,Paint It Black,10
+0-5,0,Rumours,Boys Don't Cry,13
+1-1,1,Led Zeppelin IV,Don't Stop Believin',11
+1-2,1,Led Zeppelin IV,Stairway to Heaven,10
+1-3,1,Led Zeppelin IV,Kashmir,18
+1-4,1,Led Zeppelin IV,Bohemian Rhapsody,13
+1-5,1,Led Zeppelin IV,Hallelujah,15
+2-1,2,Thriller,Purple Haze,12
+2-2,2,Thriller,Don't Stop Believin',12
+2-3,2,Thriller,A Day in the Life,9
+2-4,2,Thriller,I Want to Hold Your Hand,8
+2-5,2,Thriller,Hotel California,14
+3-1,3,Abbey Road,Livin' on a Prayer,17
+3-2,3,Abbey Road,Sweet Child o' Mine,7
+3-3,3,Abbey Road,Every Breath You Take,10
+3-4,3,Abbey Road,Hallelujah,2
+3-5,3,Abbey Road,Bohemian Rhapsody,10
+4-1,4,The Dark Side of the Moon,Another Brick in the Wall,6
+4-2,4,The Dark Side of the Moon,Nothing Else Matters,7
+4-3,4,The Dark Side of the Moon,Paint It Black,3
+4-4,4,The Dark Side of the Moon,Yesterday,20
+4-5,4,The Dark Side of the Moon,Hey Jude,7
+5-1,5,Abbey Road,Bohemian Rhapsody,6
+5-2,5,Abbey Road,A Day in the Life,6
+5-3,5,Abbey Road,Let It Be,14
+5-4,5,Abbey Road,Hallelujah,7
+5-5,5,Abbey Road,Kashmir,6
