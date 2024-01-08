@@ -20,7 +20,7 @@ biographies = [
     "Écrivain passionné et amoureux des livres . Partageons nos histoires.",
     "Voyageur du monde et amateur d'aventure . Découvrons des horizons nouveaux.",
     "Militant environnemental . Agissons pour un avenir durable."
-]
+]*10
 
 
 # Générer un mail
@@ -47,6 +47,21 @@ users = pd.DataFrame({
 
 # Affichage de la table USERS
 print('La table USERS est :\n', users.to_string(index=False))
+
+
+'''table FOLLOW'''
+# Créer une table Follow avec des id_user_A et id_user_B provenant de la table USERS
+follow = pd.DataFrame({
+    'id_follow':range(1, 101),
+    'id_user_A': random.sample(users['id_user'].tolist(), 100),
+    'id_user_B': random.sample(users['id_user'].tolist(), 100),
+    'A_follow_B': [random.choice([True, False]) for _ in range(100)],
+    'B_follow_A': [random.choice([True, False]) for _ in range(100)],
+})
+
+# Afficher la table Follow
+print('\nLa table FOLLOW est :\n', follow)
+
 
 
 '''la table concerts '''
@@ -86,46 +101,6 @@ print('La table CONCERT est :\n', concerts.to_string(index=False))
 
 
 
-
-'''table LIEUX'''
-# Liste des lieux avec leurs noms en français, anglais et arabe
-liste_lieux_en=['Paris', 'New York', 'Tokyo', 'London', 'Lille', 'Nice', 'Orleans', 'Marseille', 'Bordeaux', 'Paris']
-liste_lieux_arabic=['باريس', 'نيويورك', 'طوكيو', 'لندن', 'ليل', 'نيس', 'أورليانز', 'مرسيليا', 'بوردو', 'باريس']
-lieux =pd.DataFrame({
-    'id_lieux': range(1, 11),
-    'name_fr': [random.choice(liste_lieux_fr) for _ in range(10)],
-    'name_en': [random.choice(liste_lieux_en) for _ in range(10)],
-    'name_arabic': [random.choice(liste_lieux_arabic) for _ in range(10)],
-})
-
-
-
-# Sélectionner un indice aléatoire pour chaque ligne
-indices = random.sample(range(10), 10)
-
-# Appliquer les indices pour garantir que les noms correspondent
-lieux['name_fr'] = [liste_lieux_fr[i] for i in indices]
-lieux['name_en'] = [liste_lieux_en[i] for i in indices]
-lieux['name_arabic'] = [liste_lieux_arabic[i] for i in indices]
-
-
-# Afficher la table "lieux"
-print('La table LIEUX est :\n', lieux)
-
-
-
-
-'''table salle '''
-
-# Créer une table "salle"
-salle = pd.DataFrame({
-    'id_salle': range(1, 11),
-})
-
-# Afficher la table "salle"
-print('La table SALLE est :\n', salle)
-
-
 '''table CAUSE'''
 # Créer une table "Cause"
 cause = pd.DataFrame({
@@ -138,20 +113,17 @@ print('La table CAUSE est :\n', cause)
 
 
 
-
-
-'''table FOLLOW'''
-# Créer une table Follow avec des id_user_A et id_user_B provenant de la table USERS
-follow = pd.DataFrame({
-    'id_follow':range(1, 11),
-    'id_user_A': random.sample(users['id_user'].tolist(), 10),
-    'id_user_B': random.sample(users['id_user'].tolist(), 10),
-    'A_follow_B': [random.choice([True, False]) for _ in range(10)],
-    'B_follow_A': [random.choice([True, False]) for _ in range(10)],
+# a finir historique faut rajouter id morceaux id playlist et avis
+'''table historique'''
+historique = pd.DataFrame({
+    'id_hist': range(1, 11),
+    'id_user': random.sample(users['id_user'].tolist(), 10),
+    'id_concert': random.sample(concerts['id_concert'].tolist(), 10),
 })
 
-# Afficher la table Follow
-print('\nLa table FOLLOW est :\n', follow)
+# Affichage de la table HISTORIQUE
+print('La table HISTORIQUE est :\n', historique)
+
 
 
 '''table EVENNEMENT'''
@@ -171,26 +143,71 @@ else:
     print("La taille de la population de personnes est insuffisante pour l'échantillonnage.")
 
 
-# a finir historique faut rajouter id morceaux id playlist et avis
-'''table historique'''
-historique = pd.DataFrame({
-    'id_hist': range(1, 11),
-    'id_user': random.sample(users['id_user'].tolist(), 10),
-    'id_concert': random.sample(concerts['id_concert'].tolist(), 10),
-})
-
-# Affichage de la table HISTORIQUE
-print('La table HISTORIQUE est :\n', historique)
 
 
 
-#Enregistrer la table en fichier CSV
-users.to_csv('users.csv', index=False, quoting=1)  # quoting=1 pour ajouter des guillemets doubles aux chaînes
-concerts.to_csv("concerts.csv",index=False,quoting=1)
-lieux.to_csv('lieux.csv', index=False)
-salle.to_csv('salle.csv', index=False)
-historique.to_csv('historique.csv', index=False)
-evennement.to_csv('evennement.csv', index=False)
-cause.to_csv('cause.csv', index=False)
-follow.to_csv('follow.csv', index=False)
+
+
+
+
+
+# Enregistrer les tables en fichiers CSV
+users.to_csv('users.csv1', index=False, quoting=1)
+concerts.to_csv("concerts.csv1", index=False, quoting=1)
+historique.to_csv('historique.csv1', index=False)
+
+evennement.to_csv('evennement.csv1', index=False)
+cause.to_csv('cause.csv1', index=False)
+follow.to_csv('follow.csv1', index=False)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
