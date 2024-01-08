@@ -279,7 +279,7 @@ for album in albums:
 
         # Création d'un dictionnaire avec les informations du morceau
         morceau_info = {
-            'id_morceau': f"{album_id}-{index}",
+            'id_morceau': f"{album_id}{index}",
             'id_album': album_id,
             'name': titre_album,
             'name_morceau': morceau,

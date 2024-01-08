@@ -1,31 +1,31 @@
 id_morceau,id_album,name,name_morceau,note
-0-1,0,The Dark Side of the Moon,Hallelujah,14
-0-2,0,The Dark Side of the Moon,Nothing Else Matters,15
-0-3,0,The Dark Side of the Moon,Livin' on a Prayer,5
-0-4,0,The Dark Side of the Moon,Stairway to Heaven,9
-0-5,0,The Dark Side of the Moon,Every Breath You Take,0
-1-1,1,Rumours,November Rain,6
-1-2,1,Rumours,Smells Like Teen Spirit,15
-1-3,1,Rumours,Hey Jude,9
-1-4,1,Rumours,A Day in the Life,14
-1-5,1,Rumours,Thriller,10
-2-1,2,Abbey Road,November Rain,2
-2-2,2,Abbey Road,Don't Stop Believin',10
-2-3,2,Abbey Road,Hotel California,4
-2-4,2,Abbey Road,Dancing Queen,13
-2-5,2,Abbey Road,Hallelujah,19
-3-1,3,Abbey Road,Smells Like Teen Spirit,10
-3-2,3,Abbey Road,Paint It Black,10
-3-3,3,Abbey Road,November Rain,13
-3-4,3,Abbey Road,Hallelujah,7
-3-5,3,Abbey Road,Nothing Else Matters,5
-4-1,4,The Dark Side of the Moon,A Day in the Life,16
-4-2,4,The Dark Side of the Moon,Like a Rolling Stone,6
-4-3,4,The Dark Side of the Moon,Smells Like Teen Spirit,17
-4-4,4,The Dark Side of the Moon,Livin' on a Prayer,6
-4-5,4,The Dark Side of the Moon,Kashmir,13
-5-1,5,The Dark Side of the Moon,Don't Stop Believin',0
-5-2,5,The Dark Side of the Moon,Yesterday,15
-5-3,5,The Dark Side of the Moon,Nothing Else Matters,10
-5-4,5,The Dark Side of the Moon,I Want to Hold Your Hand,17
-5-5,5,The Dark Side of the Moon,I Will Always Love You,9
+01,0,Rumours,Under the Bridge,3
+02,0,Rumours,Stairway to Heaven,18
+03,0,Rumours,Wonderwall,11
+04,0,Rumours,Roxanne,15
+05,0,Rumours,November Rain,15
+11,1,Thriller,Wonderwall,1
+12,1,Thriller,Another Brick in the Wall,20
+13,1,Thriller,Livin' on a Prayer,18
+14,1,Thriller,Dancing Queen,12
+15,1,Thriller,November Rain,13
+21,2,Led Zeppelin IV,Like a Rolling Stone,3
+22,2,Led Zeppelin IV,Livin' on a Prayer,5
+23,2,Led Zeppelin IV,Another Brick in the Wall,17
+24,2,Led Zeppelin IV,Hotel California,19
+25,2,Led Zeppelin IV,November Rain,1
+31,3,Led Zeppelin IV,Another Brick in the Wall,11
+32,3,Led Zeppelin IV,A Day in the Life,0
+33,3,Led Zeppelin IV,Roxanne,16
+34,3,Led Zeppelin IV,Billie Jean,5
+35,3,Led Zeppelin IV,Bohemian Rhapsody,4
+41,4,Thriller,I Want to Hold Your Hand,18
+42,4,Thriller,Wonderwall,6
+43,4,Thriller,Let It Be,3
+44,4,Thriller,Yesterday,18
+45,4,Thriller,Dancing Queen,10
+51,5,The Dark Side of the Moon,Bohemian Rhapsody,12
+52,5,The Dark Side of the Moon,Imagine,8
+53,5,The Dark Side of the Moon,Every Breath You Take,1
+54,5,The Dark Side of the Moon,Another Brick in the Wall,13
+55,5,The Dark Side of the Moon,Hallelujah,5
